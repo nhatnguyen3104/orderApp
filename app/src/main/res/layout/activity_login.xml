@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="#C0C0C0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/background03"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order App"
+            android:textColor="#FF0101"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deliever Favorite Food"
+            android:textColor="#FF0101"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login To Your Account"
+            android:textColor="#FF0101"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:drawableStart="@drawable/email_24"
+            android:id="@+id/edt_email"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email or Phone Number"
+            android:background="@drawable/custom_edittext"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ock_24"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                android:id="@+id/edt_password"
+                android:padding="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/custom_edittext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_forgot"
+            android:text="Forgot Password?"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Or"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Continue With"
+            android:layout_gravity="center"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_logFB"
+                android:layout_width="152dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/image_facebook_25"
+                android:drawablePadding="0dp"
+                android:padding="10dp"
+                android:text="Facebook"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_logGG"
+                android:layout_width="152dp"
+                android:layout_height="57dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/image_google_25"
+                android:drawablePadding="0dp"
+                android:padding="10dp"
+                android:text="Google"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:id="@+id/btn_login"
+            android:background="@drawable/custom_green"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp"
+            android:text="Don't have an account?"
+            android:textSize="13sp"
+            android:textColor="#EB3535"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

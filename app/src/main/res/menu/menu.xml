@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_24"/>
+    <item
+        android:title="Car"
+        android:id="@+id/carFragment"
+        android:icon="@drawable/shopping_cart_24"/>
+    <item
+        android:title="Search"
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search_desktop_24"/>
+    <item
+        android:title="History"
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/work_history_24"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/account_circle_24"/>
+</menu>
